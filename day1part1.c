@@ -36,9 +36,9 @@ int main(){
                 else{
                     pos=99;
                 }
-                if (pos==0){
-                sol++;
             }
+            if (pos==0){
+                sol++;
             }
             
         }
@@ -60,14 +60,14 @@ int main(){
                 else{
                     pos=0;
                 }
-                if (pos==0){
+            }
+            if (pos==0){
                 sol++;
             }
-            }
-            
         }
     }
     printf("%d\n",sol);
     free(lines);
     return 0;
+
 }
