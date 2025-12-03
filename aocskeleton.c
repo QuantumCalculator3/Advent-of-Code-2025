@@ -31,8 +31,30 @@ void isort(int *arr, int n) {
     }
 }
 
+void llsort(long long *arr, int n) {
+    for (int i=0;i<n-1;i++) {
+        int min = i;
+        for (int j=i+1;j < n;j++) {
+            if (arr[j] < arr[min]) {
+                min = j;
+            }
+        }
+        long long temp = arr[i];
+        arr[i] = arr[min];
+        arr[min] = temp;
+    }
+}
+
 int strtoint(char *arr, int n){
     int num = 0;
+    for (int i=0;i<n;i++){
+        num = num*10+(arr[i]-48);
+    }
+    return num;
+}
+
+long long strtoll(char *arr, int n){
+    long long num = 0;
     for (int i=0;i<n;i++){
         num = num*10+(arr[i]-48);
     }
