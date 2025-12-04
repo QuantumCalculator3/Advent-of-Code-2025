@@ -53,7 +53,7 @@ int strtoint(char *arr, int n){
     return num;
 }
 
-long long strtoll(char *arr, int n){
+long long strtll(char *arr, int n){
     long long num = 0;
     for (int i=0;i<n;i++){
         num = num*10+(arr[i]-48);
